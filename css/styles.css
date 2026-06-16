@@ -1,3 +1,4 @@
+/* Variáveis globais de design para cores, tipografia e sombras */
 :root {
   color-scheme: light;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -13,15 +14,18 @@
   --shadow: 0 30px 80px rgba(37, 99, 235, 0.12);
 }
 
+/* Reset de caixa para todos os elementos */
 * {
   box-sizing: border-box;
 }
 
+/* Remove margens padrão e garante altura mínima */
 html, body {
   margin: 0;
   min-height: 100%;
 }
 
+/* Estilos base do corpo com gradiente de fundo leve */
 body {
   background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.12), transparent 28%),
               radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.14), transparent 24%),
@@ -29,6 +33,7 @@ body {
   color: #111827;
 }
 
+/* Camada decorativa fixa atrás do conteúdo principal */
 body::before {
   content: "";
   position: fixed;
@@ -38,6 +43,7 @@ body::before {
   pointer-events: none;
 }
 
+/* Contêiner central que mantém a página alinhada */
 .page-shell {
   min-height: 100vh;
   display: flex;
@@ -46,6 +52,7 @@ body::before {
   padding: 2rem 1rem;
 }
 
+/* Cartão principal da área hero com borda arredondada */
 .hero {
   position: relative;
   width: min(720px, 100%);
@@ -57,6 +64,7 @@ body::before {
   animation: fadeIn 0.75s ease-out both;
 }
 
+/* Bolas decorativas no fundo da área hero */
 .hero-decor {
   position: absolute;
   border-radius: 50%;
@@ -80,12 +88,14 @@ body::before {
   background: rgba(59, 130, 246, 0.10);
 }
 
+/* Área de conteúdo principal do hero */
 .hero-content {
   position: relative;
   z-index: 1;
   text-align: center;
 }
 
+/* Caixa da logo com fundo azul escuro */
 .brand-mark {
   display: inline-flex;
   align-items: center;
@@ -102,6 +112,7 @@ body::before {
   height: 200px;
 }
 
+/* Título principal com tamanho adaptativo */
 h1 {
   margin: 0;
   font-size: clamp(2.5rem, 4vw, 3.5rem);
@@ -109,6 +120,7 @@ h1 {
   line-height: 1;
 }
 
+/* Texto de apoio do hero */
 .hero-copy {
   margin: 1.25rem auto 2rem;
   max-width: 540px;
@@ -116,6 +128,7 @@ h1 {
   font-size: 1.05rem;
 }
 
+/* Botão de ação principal */
 .button {
   display: inline-flex;
   align-items: center;
@@ -131,11 +144,13 @@ h1 {
   box-shadow: 0 18px 30px rgba(37, 99, 235, 0.18);
 }
 
+/* Estilo específico do botão principal */
 .primary-button {
   background: var(--primary);
   color: #ffffff;
 }
 
+/* Efeito de hover e foco no botão */
 .primary-button:hover,
 .primary-button:focus-visible {
   background: #1D4ED8;
@@ -143,12 +158,14 @@ h1 {
   box-shadow: 0 20px 40px rgba(37, 99, 235, 0.24);
 }
 
+/* Texto de nota de versão */
 .version-note {
   margin-top: 1.25rem;
   color: var(--text-muted);
   font-size: 0.95rem;
 }
 
+/* Rodapé simples com informações do app */
 .page-footer {
   display: flex;
   justify-content: center;
@@ -158,6 +175,7 @@ h1 {
   font-size: 0.95rem;
 }
 
+/* Ajustes de espaçamento para telas médias */
 @media (min-width: 640px) {
   .page-shell {
     padding: 3rem 1.5rem;
@@ -168,6 +186,7 @@ h1 {
   }
 }
 
+/* Ajustes de layout para telas grandes */
 @media (min-width: 1024px) {
   .page-shell {
     padding: 4rem 2rem;
@@ -182,6 +201,7 @@ h1 {
   }
 }
 
+/* Animação de entrada suave do cartão hero */
 @keyframes fadeIn {
   from {
     opacity: 0;
