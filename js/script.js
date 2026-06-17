@@ -1,5 +1,5 @@
 // URL do APK nas Releases do GitHub. Altere para o link correto do seu repositório.
-const APK_DOWNLOAD_URL = 'https://github.com/USERNAME/PortalEd_Lite/releases/latest/download/PortalEd_Lite.apk';
+const APK_DOWNLOAD_URL = 'https://raw.githubusercontent.com/LucasdeOliveiraCerqueira/PortalEd_Lite_site/main/assets/app-debug.apk';
 
 // Aguarda o carregamento do DOM antes de acessar elementos da página.
 window.addEventListener('DOMContentLoaded', () => {
