@@ -26,3 +26,10 @@ Landing page estática para apresentação e download do aplicativo Android Port
 - O design é mobile-first, simples e focado no download.
 - Não há backend, apenas HTML, CSS e JavaScript puro.
 - Comentários foram adicionados nos arquivos para facilitar a manutenção.
+
+Para alterar o apk Basta colocar em assets e alterar isso no codigo:
+<a id="downloadButton" class="button primary-button"
+   href="https://github.com/SEU_USUARIO/PortalEd_Lite/releases/latest/download/PortalEd_Lite.apk"
+   role="button" aria-label="Baixar APK do PortalEd Lite">
+  BAIXAR APK
+</a>
